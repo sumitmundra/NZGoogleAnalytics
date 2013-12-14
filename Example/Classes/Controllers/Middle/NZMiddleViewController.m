@@ -7,32 +7,14 @@
 //
 
 #import "NZMiddleViewController.h"
-
-@interface NZMiddleViewController ()
-
-@end
+#import "NZGoogleAnalyticsTracker.h"
 
 @implementation NZMiddleViewController
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+- (void)viewDidAppear:(BOOL)animated
 {
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
-
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-	// Do any additional setup after loading the view.
-}
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    [super viewDidAppear:animated];
+    [NZGoogleAnalyticsTracker trackViewWithController:self withIdentifier:@"id-001"];
 }
 
 @end

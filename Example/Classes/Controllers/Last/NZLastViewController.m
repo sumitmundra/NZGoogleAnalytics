@@ -7,32 +7,14 @@
 //
 
 #import "NZLastViewController.h"
-
-@interface NZLastViewController ()
-
-@end
+#import "NZGoogleAnalyticsTracker.h"
 
 @implementation NZLastViewController
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+- (void)viewDidAppear:(BOOL)animated
 {
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
-
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-	// Do any additional setup after loading the view.
-}
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    [super viewDidAppear:animated];
+    [NZGoogleAnalyticsTracker trackViewWithController:self withIdentifier:@"some_id"];
 }
 
 @end

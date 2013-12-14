@@ -7,26 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CA0B853B1CEE4F02B4F6E484 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 37097913AC434D95A00CACA2 /* libPods.a */; };
 		F89E5443185C88A1008C4632 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F89E5442185C88A1008C4632 /* Foundation.framework */; };
 		F89E5445185C88A1008C4632 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F89E5444185C88A1008C4632 /* CoreGraphics.framework */; };
 		F89E5447185C88A1008C4632 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F89E5446185C88A1008C4632 /* UIKit.framework */; };
-		F8F74A0A185C89E60058C0C8 /* NZViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8F749FD185C89E60058C0C8 /* NZViewController.m */; };
 		F8F74A0B185C89E60058C0C8 /* NZAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F8F749FF185C89E60058C0C8 /* NZAppDelegate.m */; };
 		F8F74A0C185C89E60058C0C8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8F74A01185C89E60058C0C8 /* Main.storyboard */; };
 		F8F74A0D185C89E60058C0C8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8F74A03185C89E60058C0C8 /* Images.xcassets */; };
 		F8F74A0E185C89E60058C0C8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F8F74A05185C89E60058C0C8 /* InfoPlist.strings */; };
 		F8F74A0F185C89E60058C0C8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F8F74A07185C89E60058C0C8 /* main.m */; };
-		F8F74A10185C89E60058C0C8 /* NZGoogleAnalytics-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F8F74A08185C89E60058C0C8 /* NZGoogleAnalytics-Info.plist */; };
+		F8F74A1A185C8F140058C0C8 /* NZInitialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8F74A19185C8F140058C0C8 /* NZInitialViewController.m */; };
+		F8F74A1D185C8F270058C0C8 /* NZMiddleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8F74A1C185C8F270058C0C8 /* NZMiddleViewController.m */; };
+		F8F74A20185C8F370058C0C8 /* NZLastViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F8F74A1F185C8F370058C0C8 /* NZLastViewController.m */; };
+		F8F74A23185C91420058C0C8 /* NZGoogleAnalyticsTracker.m in Sources */ = {isa = PBXBuildFile; fileRef = F8F74A22185C91420058C0C8 /* NZGoogleAnalyticsTracker.m */; };
+		F8F74A26185C99550058C0C8 /* NZGoogleAnalytics-Tracker.plist in Resources */ = {isa = PBXBuildFile; fileRef = F8F74A25185C99550058C0C8 /* NZGoogleAnalytics-Tracker.plist */; };
+		F8F74A29185CA1430058C0C8 /* NZGoogleAnalytics.m in Sources */ = {isa = PBXBuildFile; fileRef = F8F74A28185CA1430058C0C8 /* NZGoogleAnalytics.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		37097913AC434D95A00CACA2 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		7712361A952342839E3D3548 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		F89E543F185C88A1008C4632 /* NZGoogleAnalytics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NZGoogleAnalytics.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F89E5442185C88A1008C4632 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F89E5444185C88A1008C4632 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		F89E5446185C88A1008C4632 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		F89E5461185C88A1008C4632 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		F8F749FC185C89E60058C0C8 /* NZViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NZViewController.h; sourceTree = "<group>"; };
-		F8F749FD185C89E60058C0C8 /* NZViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NZViewController.m; sourceTree = "<group>"; };
 		F8F749FE185C89E60058C0C8 /* NZAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NZAppDelegate.h; sourceTree = "<group>"; };
 		F8F749FF185C89E60058C0C8 /* NZAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NZAppDelegate.m; sourceTree = "<group>"; };
 		F8F74A02185C89E60058C0C8 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -35,6 +40,17 @@
 		F8F74A07185C89E60058C0C8 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F8F74A08185C89E60058C0C8 /* NZGoogleAnalytics-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "NZGoogleAnalytics-Info.plist"; sourceTree = "<group>"; };
 		F8F74A09185C89E60058C0C8 /* NZGoogleAnalytics-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NZGoogleAnalytics-Prefix.pch"; sourceTree = "<group>"; };
+		F8F74A18185C8F140058C0C8 /* NZInitialViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NZInitialViewController.h; sourceTree = "<group>"; };
+		F8F74A19185C8F140058C0C8 /* NZInitialViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NZInitialViewController.m; sourceTree = "<group>"; };
+		F8F74A1B185C8F270058C0C8 /* NZMiddleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NZMiddleViewController.h; sourceTree = "<group>"; };
+		F8F74A1C185C8F270058C0C8 /* NZMiddleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NZMiddleViewController.m; sourceTree = "<group>"; };
+		F8F74A1E185C8F370058C0C8 /* NZLastViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NZLastViewController.h; sourceTree = "<group>"; };
+		F8F74A1F185C8F370058C0C8 /* NZLastViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NZLastViewController.m; sourceTree = "<group>"; };
+		F8F74A21185C91420058C0C8 /* NZGoogleAnalyticsTracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NZGoogleAnalyticsTracker.h; sourceTree = "<group>"; };
+		F8F74A22185C91420058C0C8 /* NZGoogleAnalyticsTracker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NZGoogleAnalyticsTracker.m; sourceTree = "<group>"; };
+		F8F74A25185C99550058C0C8 /* NZGoogleAnalytics-Tracker.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "NZGoogleAnalytics-Tracker.plist"; sourceTree = "<group>"; };
+		F8F74A27185CA1430058C0C8 /* NZGoogleAnalytics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NZGoogleAnalytics.h; sourceTree = "<group>"; };
+		F8F74A28185CA1430058C0C8 /* NZGoogleAnalytics.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NZGoogleAnalytics.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +61,7 @@
 				F89E5445185C88A1008C4632 /* CoreGraphics.framework in Frameworks */,
 				F89E5447185C88A1008C4632 /* UIKit.framework in Frameworks */,
 				F89E5443185C88A1008C4632 /* Foundation.framework in Frameworks */,
+				CA0B853B1CEE4F02B4F6E484 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,7 +73,9 @@
 			children = (
 				F8F749F9185C89E50058C0C8 /* Example */,
 				F89E5441185C88A1008C4632 /* Frameworks */,
+				F8F74A14185C89F80058C0C8 /* NZGoogleAnalytics */,
 				F89E5440185C88A1008C4632 /* Products */,
+				7712361A952342839E3D3548 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -75,6 +94,7 @@
 				F89E5444185C88A1008C4632 /* CoreGraphics.framework */,
 				F89E5446185C88A1008C4632 /* UIKit.framework */,
 				F89E5461185C88A1008C4632 /* XCTest.framework */,
+				37097913AC434D95A00CACA2 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -84,6 +104,7 @@
 			children = (
 				F8F749FA185C89E60058C0C8 /* Classes */,
 				F8F74A03185C89E60058C0C8 /* Images.xcassets */,
+				F8F74A24185C99400058C0C8 /* Resources */,
 				F8F74A04185C89E60058C0C8 /* SupportingFiles */,
 			);
 			path = Example;
@@ -92,9 +113,9 @@
 		F8F749FA185C89E60058C0C8 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				F8F749FB185C89E60058C0C8 /* Controllers */,
 				F8F749FE185C89E60058C0C8 /* NZAppDelegate.h */,
 				F8F749FF185C89E60058C0C8 /* NZAppDelegate.m */,
+				F8F749FB185C89E60058C0C8 /* Controllers */,
 				F8F74A00185C89E60058C0C8 /* Views */,
 			);
 			path = Classes;
@@ -103,8 +124,9 @@
 		F8F749FB185C89E60058C0C8 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				F8F749FC185C89E60058C0C8 /* NZViewController.h */,
-				F8F749FD185C89E60058C0C8 /* NZViewController.m */,
+				F8F74A15185C8EF50058C0C8 /* Initial */,
+				F8F74A17185C8EF50058C0C8 /* Middle */,
+				F8F74A16185C8EF50058C0C8 /* Last */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -128,6 +150,52 @@
 			path = SupportingFiles;
 			sourceTree = "<group>";
 		};
+		F8F74A14185C89F80058C0C8 /* NZGoogleAnalytics */ = {
+			isa = PBXGroup;
+			children = (
+				F8F74A27185CA1430058C0C8 /* NZGoogleAnalytics.h */,
+				F8F74A28185CA1430058C0C8 /* NZGoogleAnalytics.m */,
+				F8F74A21185C91420058C0C8 /* NZGoogleAnalyticsTracker.h */,
+				F8F74A22185C91420058C0C8 /* NZGoogleAnalyticsTracker.m */,
+			);
+			path = NZGoogleAnalytics;
+			sourceTree = "<group>";
+		};
+		F8F74A15185C8EF50058C0C8 /* Initial */ = {
+			isa = PBXGroup;
+			children = (
+				F8F74A18185C8F140058C0C8 /* NZInitialViewController.h */,
+				F8F74A19185C8F140058C0C8 /* NZInitialViewController.m */,
+			);
+			path = Initial;
+			sourceTree = "<group>";
+		};
+		F8F74A16185C8EF50058C0C8 /* Last */ = {
+			isa = PBXGroup;
+			children = (
+				F8F74A1E185C8F370058C0C8 /* NZLastViewController.h */,
+				F8F74A1F185C8F370058C0C8 /* NZLastViewController.m */,
+			);
+			path = Last;
+			sourceTree = "<group>";
+		};
+		F8F74A17185C8EF50058C0C8 /* Middle */ = {
+			isa = PBXGroup;
+			children = (
+				F8F74A1B185C8F270058C0C8 /* NZMiddleViewController.h */,
+				F8F74A1C185C8F270058C0C8 /* NZMiddleViewController.m */,
+			);
+			path = Middle;
+			sourceTree = "<group>";
+		};
+		F8F74A24185C99400058C0C8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F8F74A25185C99550058C0C8 /* NZGoogleAnalytics-Tracker.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +203,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F89E5471185C88A1008C4632 /* Build configuration list for PBXNativeTarget "NZGoogleAnalytics" */;
 			buildPhases = (
+				0A0DF5D9472B4653ACD1C136 /* Check Pods Manifest.lock */,
 				F89E543B185C88A1008C4632 /* Sources */,
 				F89E543C185C88A1008C4632 /* Frameworks */,
 				F89E543D185C88A1008C4632 /* Resources */,
+				F9B5D1B58180467199CD5733 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -181,8 +251,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F8F74A10185C89E60058C0C8 /* NZGoogleAnalytics-Info.plist in Resources */,
 				F8F74A0C185C89E60058C0C8 /* Main.storyboard in Resources */,
+				F8F74A26185C99550058C0C8 /* NZGoogleAnalytics-Tracker.plist in Resources */,
 				F8F74A0E185C89E60058C0C8 /* InfoPlist.strings in Resources */,
 				F8F74A0D185C89E60058C0C8 /* Images.xcassets in Resources */,
 			);
@@ -190,14 +260,51 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0A0DF5D9472B4653ACD1C136 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F9B5D1B58180467199CD5733 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F89E543B185C88A1008C4632 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				F8F74A0B185C89E60058C0C8 /* NZAppDelegate.m in Sources */,
+				F8F74A1D185C8F270058C0C8 /* NZMiddleViewController.m in Sources */,
+				F8F74A1A185C8F140058C0C8 /* NZInitialViewController.m in Sources */,
+				F8F74A29185CA1430058C0C8 /* NZGoogleAnalytics.m in Sources */,
 				F8F74A0F185C89E60058C0C8 /* main.m in Sources */,
-				F8F74A0A185C89E60058C0C8 /* NZViewController.m in Sources */,
+				F8F74A23185C91420058C0C8 /* NZGoogleAnalyticsTracker.m in Sources */,
+				F8F74A20185C8F370058C0C8 /* NZLastViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,12 +404,13 @@
 		};
 		F89E5472185C88A1008C4632 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7712361A952342839E3D3548 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "NZGoogleAnalytics/NZGoogleAnalytics-Prefix.pch";
-				INFOPLIST_FILE = "NZGoogleAnalytics/NZGoogleAnalytics-Info.plist";
+				GCC_PREFIX_HEADER = "Example/SupportingFiles/NZGoogleAnalytics-Prefix.pch";
+				INFOPLIST_FILE = "Example/SupportingFiles/NZGoogleAnalytics-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -310,12 +418,13 @@
 		};
 		F89E5473185C88A1008C4632 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7712361A952342839E3D3548 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "NZGoogleAnalytics/NZGoogleAnalytics-Prefix.pch";
-				INFOPLIST_FILE = "NZGoogleAnalytics/NZGoogleAnalytics-Info.plist";
+				GCC_PREFIX_HEADER = "Example/SupportingFiles/NZGoogleAnalytics-Prefix.pch";
+				INFOPLIST_FILE = "Example/SupportingFiles/NZGoogleAnalytics-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

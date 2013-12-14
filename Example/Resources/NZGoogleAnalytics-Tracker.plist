@@ -1,5 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
-<dict/>
+<array>
+	<dict>
+		<key>class_name</key>
+		<string>NZInitialViewController</string>
+		<key>view_name</key>
+		<string>initial_view</string>
+	</dict>
+	<dict>
+		<key>class_name</key>
+		<string>NZMiddleViewController</string>
+		<key>view_name</key>
+		<string>middle_view</string>
+	</dict>
+	<dict>
+		<key>class_name</key>
+		<string>NZLastViewController</string>
+		<key>view_name</key>
+		<string>last_view</string>
+	</dict>
+</array>
 </plist>

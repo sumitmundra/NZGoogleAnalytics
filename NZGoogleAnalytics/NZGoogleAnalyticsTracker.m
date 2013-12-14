@@ -7,7 +7,101 @@
 //
 
 #import "NZGoogleAnalyticsTracker.h"
+#import "GAI.h"
+#import "GAIDictionaryBuilder.h"
+#import "GAIFields.h"
+
+static NSArray* Views = nil;
+static NSString* const kResourceName = @"NZGoogleAnalytics-Tracker";
+
+
+
+@interface NZGoogleAnalyticsTracker ()
+
++ (NSString *)viewNameForController:(UIViewController *)controller;
+@end
+
+
 
 @implementation NZGoogleAnalyticsTracker
+
+#pragma mark -
+#pragma mark - NSObject
+
++ (void)load
+{
+#ifdef NZDEBUG
+    NSLog(@"%s", __PRETTY_FUNCTION__);
+#endif
+    
+    [super load];
+    
+    NSString *path = [[NSBundle mainBundle] pathForResource:kResourceName ofType:@"plist"];
+    
+    if (path && [[NSFileManager defaultManager] fileExistsAtPath:path]) {
+        Views = [[NSArray alloc] initWithContentsOfFile:path];
+    }
+
+    if (Views == nil) {
+        NSLog(@"%s \"%@.plist\" not found or not configurated. \
+              Check if the file has been added to your project and add 'class_name' keys and 'view_name' values to array.",
+              __PRETTY_FUNCTION__, kResourceName);
+    }
+}
+
+#pragma mark -
+#pragma mark - Public methods
+
++ (void)trackViewWithController:(UIViewController *)controller
+{
+    [self trackViewWithController:controller withIdentifier:nil];
+}
+
++ (void)trackViewWithController:(UIViewController *)controller withIdentifier:(NSString *)identifier
+{
+    id<GAITracker> tracker = [[GAI sharedInstance] defaultTracker];
+    NSString *viewName = [self viewNameForController:controller];
+    
+    if (viewName) {
+        NSMutableString *string = [[NSMutableString alloc] initWithString:@"/ios/"];
+        [string appendString:viewName];
+        
+        if (identifier) {
+            [string appendFormat:@"/%@", identifier];
+        }
+        
+        [tracker set:kGAIScreenName value:string];
+        [tracker send:[[GAIDictionaryBuilder createAppView] build]];
+    } else {
+#ifdef NZDEBUG
+        NSLog(@"%s nil tracker name for controller: %@",
+              __PRETTY_FUNCTION__, NSStringFromClass([controller class]));
+#endif
+    }
+}
+
+#pragma mark -
+#pragma mark - Private methods
+
++ (NSString *)viewNameForController:(UIViewController *)controller
+{
+    NSString *controllerName = NSStringFromClass([controller class]);
+    NSString *viewName = nil;
+    
+    if (Views) {
+        for (NSDictionary *dictionary in Views) {
+            if (dictionary) {
+                NSString *className = [dictionary objectForKey:@"class_name"];
+                
+                if (className && [className isEqualToString:controllerName]) {
+                    viewName = [dictionary objectForKey:@"view_name"];
+                    break;
+                }
+            }
+        }
+    }
+    
+    return viewName;
+}
 
 @end
