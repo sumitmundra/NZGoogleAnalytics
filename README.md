@@ -20,7 +20,7 @@ NZGoogleAnalytics uses [Google Analytics SDK for iOS](https://developers.google.
 
 [CocoaPods](http://cocoapods.org) is the recommended way to add NZGoogleAnalytics to your project.
 
-* Add a pod entry for NZGoogleAnalytics to your Podfile `pod 'NZGoogleAnalytics', :git => 'https://github.com/NZN/NZGoogleAnalytics'`
+* Add a pod entry for NZGoogleAnalytics to your Podfile `pod 'NZGoogleAnalytics', '~> 0.0.1'`
 * Install the pod(s) by running `pod install`.
 
 ### Source files
