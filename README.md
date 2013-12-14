@@ -34,6 +34,7 @@ Alternatively you can directly add source files to your project.
 ## Usage
 
 * You will need to define `NZ_GA_TRACKINGID` at your project prefix header `*-Prefix.pch`:
+
 ```objective-c
 // define your Google Analytics Tracking ID
 #define NZ_GA_TRACKINGID "UA-000000-01"
@@ -75,12 +76,12 @@ GAILogLevel logLevel = [NZGoogleAnalytics logLevel];
 1. Add `NZGoogleAnalytics-Tracker.plist` file to your project with the following configuration:
 	* `class_name`: Your view controller class name
 	* `view_name`: Your track view name
+
 <p align="center">
   <img src="http://s21.postimg.org/mjlzwoz93/NZGoogle_Analytics_Tracker.jpg" alt="NZCircularImageView" title="NZCircularImageView" width="740" height="270">
 </p>
 
 2. Configure your View Controller class:
-
 
 ```objective-c
 #import "NZGoogleAnalyticsTracker.h"
