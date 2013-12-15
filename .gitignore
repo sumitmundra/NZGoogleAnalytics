@@ -24,3 +24,7 @@ profile
 *.DS_Store
 *.swp
 *.out
+
+# Cocoa Pods
+Pods/
+Podfile.lock
