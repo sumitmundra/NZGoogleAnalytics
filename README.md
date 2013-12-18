@@ -3,6 +3,8 @@
 Quickly and easily integration with Google Analytics API for iOS.
 
 [![Build Status](https://api.travis-ci.org/NZN/NZGoogleAnalytics.png)](https://api.travis-ci.org/NZN/NZGoogleAnalytics.png)
+[![Cocoapods](https://cocoapod-badges.herokuapp.com/v/NZGoogleAnalytics/badge.png)](http://beta.cocoapods.org/?q=name%3Anzgoogleanalytics%2A)
+[![Cocoapods](https://cocoapod-badges.herokuapp.com/p/NZGoogleAnalytics/badge.png)](http://beta.cocoapods.org/?q=name%3Anzgoogleanalytics%2A)
 
 ## Requirements
 
