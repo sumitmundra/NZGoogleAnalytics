@@ -14,7 +14,7 @@ NZGoogleAnalytics works on iOS 5.0+ version and is compatible with ARC projects.
 
 You will need LLVM 3.0 or later in order to build NZGoogleAnalytics.
 
-NZGoogleAnalytics uses [Google Analytics SDK for iOS](https://developers.google.com/analytics/devguides/collection/ios/resources).
+NZGoogleAnalytics uses [Google Analytics SDK for iOS](https://developers.google.com/analytics/devguides/collection/ios/resources) and [NZBundle](https://github.com/NZN/NZBundle).
 
 ## Adding NZGoogleAnalytics to your project
 
@@ -22,8 +22,17 @@ NZGoogleAnalytics uses [Google Analytics SDK for iOS](https://developers.google.
 
 [CocoaPods](http://cocoapods.org) is the recommended way to add NZGoogleAnalytics to your project.
 
-* Add a pod entry for NZGoogleAnalytics to your Podfile `pod 'NZGoogleAnalytics', '~> 0.0.1'`
-* Install the pod(s) by running `pod install`.
+* Add a pod entry for NZGoogleAnalytics to your Podfile:
+
+```
+pod 'NZGoogleAnalytics', '~> 0.0.1'
+```
+
+* Install the pod(s) by running:
+
+```
+pod install
+```
 
 ### Source files
 
@@ -32,6 +41,24 @@ Alternatively you can directly add source files to your project.
 1. Download the [latest code version](https://github.com/NZN/NZGoogleAnalytics/archive/master.zip) or add the repository as a git submodule to your git-tracked project.
 2. Open your project in Xcode, then drag and drop all files at `NZGoogleAnalytics` folder onto your project (use the "Product Navigator view"). Make sure to select Copy items when asked if you extracted the code archive outside of your project.
 3. Install [Google Analytics SDK for iOS](https://developers.google.com/analytics/devguides/collection/ios/resources) and your frameworks dependencies
+4. Install [NZBundle](https://github.com/NZN/NZBundle)
+
+## Info
+
+* Default values for debug/release mode:
+	* `trackUncaughtExceptions`: NO
+	* `dispatchInterval`: 5 seconds
+	* `logLevel`: kGAILogLevelNone
+	
+* Default values for distribution mode:
+	* `trackUncaughtExceptions`: YES
+	* `dispatchInterval`: 20 seconds
+	* `logLevel`: kGAILogLevelNone
+	
+* NZGoogleAnalytics use [NZBundle](https://github.com/NZN/NZBundle) for change build version name:
+	* Debug and Relase: `X.X.Xa alpha`
+	* Distribution: `X.X.Xa`	
+
 
 ## Usage
 
@@ -42,21 +69,7 @@ Alternatively you can directly add source files to your project.
 #define NZ_GA_TRACKINGID "UA-000000-01"
 ```
 
-* The NZGoogleAnalytics overrides the `+(void)load;` method of NSObject class, which is called every time the application starts. Therefore, ome default settings are performed:
-
-```objective-c
-// default settings for debug/release
-//
-// trackUncaughtExceptions = NO
-// dispatchInterval = 5
-// logLevel = kGAILogLevelNone
-
-// default settings for distribution
-//
-// trackUncaughtExceptions = YES
-// dispatchInterval = 20
-// logLevel = kGAILogLevelNone
-```
+* The NZGoogleAnalytics overrides the `+(void)load;` method of NSObject class, which is called every time the application starts.
 
 * You can change the default setting:
 
