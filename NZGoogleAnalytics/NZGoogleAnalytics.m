@@ -7,6 +7,8 @@
 //
 
 #import "NZGoogleAnalytics.h"
+#import "NSBundle+AlphaVersion.h"
+#import "NZBundle.h"
 
 @interface NZGoogleAnalytics ()
 
@@ -77,6 +79,9 @@
 
 + (void)setup
 {
+    [[NSBundle mainBundle] saveInitialShortVersion];
+    [NZBundle setupShortVersion];
+
     self.trackUncaughtExceptions = YES;
     self.dispatchInterval = 20;
     self.logLevel = kGAILogLevelNone;
