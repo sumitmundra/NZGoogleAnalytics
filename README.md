@@ -88,15 +88,15 @@ GAILogLevel logLevel = [NZGoogleAnalytics logLevel];
 
 * Easy track your View Controller:
 
-1. Add `NZGoogleAnalytics-Tracker.plist` file to your project with the following configuration:
-	* `class_name`: Your view controller class name
-	* `view_name`: Your track view name
+	* Add `NZGoogleAnalytics-Tracker.plist` file to your project with the following configuration:
+		* `class_name`: Your view controller class name
+		* `view_name`: Your track view name
 
 <p align="center">
   <img src="http://s21.postimg.org/mjlzwoz93/NZGoogle_Analytics_Tracker.jpg" alt="NZCircularImageView" title="NZCircularImageView" width="740" height="270">
 </p>
 
-2. Configure your View Controller class:
+* Configure your View Controller class:
 
 ```objective-c
 #import "NZGoogleAnalyticsTracker.h"
@@ -108,6 +108,11 @@ GAILogLevel logLevel = [NZGoogleAnalytics logLevel];
     [super viewDidAppear:animated];
     [NZGoogleAnalyticsTracker trackViewWithController:self];
 }
+```
+
+```objective-c
+#import "NZGoogleAnalyticsTracker.h"
+...
 
 // screen name: /ios/first_view/id_001
 - (void)viewDidAppear:(BOOL)animated
