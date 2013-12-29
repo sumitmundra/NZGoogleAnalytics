@@ -1,4 +1,4 @@
-#NZGoogleAnalytics
+#NZGoogleAnalytics ![License MIT](https://go-shields.herokuapp.com/license-MIT-blue.png)
 
 Quickly and easily integration with Google Analytics API for iOS.
 
